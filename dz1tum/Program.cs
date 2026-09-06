@@ -10,6 +10,16 @@ namespace dz1tum
     {
         static void Main(string[] args)
         {
-        }
+            //Задание 1
+
+
+            Console.WriteLine("Введите свое имя");
+            string name = Console.ReadLine();
+            Console.WriteLine($"Здравствуйте {name}");
+
+            Console.ReadKey();
+
+
+          }
     }
 }
