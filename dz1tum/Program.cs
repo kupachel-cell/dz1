@@ -61,35 +61,35 @@ namespace dz1tum
 
             //Дом задание 2.2
 
-            Console.WriteLine("Ведите коэффицент a");
+            //Console.WriteLine("Ведите коэффицент a");
 
-            float a = float.Parse(Console.ReadLine());
+            //float a = float.Parse(Console.ReadLine());
 
-            Console.WriteLine("Введите коэффицент b");
+            //Console.WriteLine("Введите коэффицент b");
 
-            float b = float.Parse(Console.ReadLine());
+            //float b = float.Parse(Console.ReadLine());
 
-            Console.WriteLine("Введите коэффицент c");
+            //Console.WriteLine("Введите коэффицент c");
 
-            float c = float.Parse(Console.ReadLine());
+            //float c = float.Parse(Console.ReadLine());
 
-            float d = b*b - 4 * a * c;
+            //float d = b*b - 4 * a * c;
 
-            if (d>0){
-                Console.WriteLine($"Первый x равен{(-b-(Math.Sqrt(d)))/(2*a)}, второй  x равен {(-b+(Math.Sqrt(d)))/(2*a)}");
-
-
-            }
-            else if (d==0){
-                Console.WriteLine($"X равен {(-b)/(2*a)}");
-            }
-            else
-            {
-                Console.WriteLine("Дискриминант меньше нуля, нет решения");
-            }
+            //if (d>0){
+            //    Console.WriteLine($"Первый x равен{(-b-(Math.Sqrt(d)))/(2*a)}, второй  x равен {(-b+(Math.Sqrt(d)))/(2*a)}");
 
 
-            Console.ReadKey();
+            //}
+            //else if (d==0){
+            //    Console.WriteLine($"X равен {(-b)/(2*a)}");
+            //}
+            //else
+            //{
+            //    Console.WriteLine("Дискриминант меньше нуля, нет решения");
+            //}
+
+
+            //Console.ReadKey();
 
 
         }
