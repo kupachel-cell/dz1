@@ -61,22 +61,17 @@ namespace dz1tum
 
             //Дом задание 2.2
 
+
             //Console.WriteLine("Ведите коэффицент a");
-
             //float a = float.Parse(Console.ReadLine());
-
             //Console.WriteLine("Введите коэффицент b");
-
             //float b = float.Parse(Console.ReadLine());
-
             //Console.WriteLine("Введите коэффицент c");
-
             //float c = float.Parse(Console.ReadLine());
-
             //float d = b*b - 4 * a * c;
 
             //if (d>0){
-            //    Console.WriteLine($"Первый x равен{(-b-(Math.Sqrt(d)))/(2*a)}, второй  x равен {(-b+(Math.Sqrt(d)))/(2*a)}");
+            //    Console.WriteLine($"Первый x равен{(-b-(MathF.Sqrt(d)))/(2*a)}, второй  x равен {(-b+(MathF.Sqrt(d)))/(2*a)}");
 
 
             //}
@@ -87,9 +82,7 @@ namespace dz1tum
             //{
             //    Console.WriteLine("Дискриминант меньше нуля, нет решения");
             //}
-
-
-            //Console.ReadKey();
+            // Console.Readkey();
 
 
         }

@@ -2,7 +2,9 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
+using System.Xml;
 
 namespace dz1lat
 {
@@ -107,7 +109,7 @@ namespace dz1lat
             //float d = b*b - 4 * a * c;
 
             //if (d>0){
-            //    Console.WriteLine($"Первый x равен{(-b-(Math.Sqrt(d)))/(2*a)}, второй  x равен {(-b+(Math.Sqrt(d)))/(2*a)}");
+            //    Console.WriteLine($"Первый x равен{(-b-(MathF.Sqrt(d)))/(2*a)}, второй  x равен {(-b+(MathF.Sqrt(d)))/(2*a)}");
 
 
             //}
@@ -123,6 +125,150 @@ namespace dz1lat
             //Console.ReadKey();
 
             //Задание 11
+
+            //Console.WriteLine("Введите первое число");
+            //int num1 = Convert.ToInt32(Console.ReadLine());
+            //Console.WriteLine("Введите второе число");
+            //int num2 = Convert.ToInt32(Console.ReadLine());
+            //Console.WriteLine($"Среднее арифметическое этих чисел равно {(num1+num2)/2}");
+            //Console.WriteLine($"Среднее геометрическое этих чисел равно {Math.Sqrt(num1*num2)}");
+
+            //Console.ReadKey();
+
+            //Задание 12
+
+            //Console.WriteLine("Введите координату  x первой точки");
+            //double x1 = Convert.ToDouble(Console.ReadLine());
+            //Console.WriteLine("Введите координату  y первой точки");
+            //double y1 = Convert.ToDouble(Console.ReadLine());
+            //Console.WriteLine("Введите координату  x второй точки");
+            //double x2 = Convert.ToDouble(Console.ReadLine());
+            //Console.WriteLine("Введите координату  y второй точки");
+            //double y2 = Convert.ToDouble(Console.ReadLine());
+            //Console.WriteLine($"Расстояние между этими точками {Math.Sqrt((x2-x1)*(x2-x1)+(y2-y1)*(y2-y1))}");
+
+            //Console.ReadKey();
+
+            //Задание 13
+
+            //Console.WriteLine("Введите числовое значение для  a");
+            //int a1 = Convert.ToInt32(Console.ReadLine());
+            //Console.WriteLine("Введите числовое значение для  b");
+            //int b1 = Convert.ToInt32(Console.ReadLine());
+            //Console.WriteLine("Введите числовое значение для  c");
+            //int c1 = Convert.ToInt32(Console.ReadLine());
+            //int d1 = a1;
+
+            //a1 = b1;
+            //b1 = c1;
+            //c1 = d1;
+            //Console.WriteLine($"a={a1}, b={b1},c={c1}");
+
+            //Console.WriteLine("Введите новое числовое значение для  a");
+            //int a2 = Convert.ToInt32(Console.ReadLine());
+            //Console.WriteLine("Введите новое числовое значение для  b");
+            //int b2 = Convert.ToInt32(Console.ReadLine());
+            //Console.WriteLine("Введите новое числовое значение для  c");
+            //int c2 = Convert.ToInt32(Console.ReadLine());
+            //int d2 = c2;
+
+            //c2 = b2;
+            //b2 = a2;
+            //a2 = d2;
+            //Console.WriteLine($"a={a2}, b={b2},c={c2}");
+
+            //Console.ReadKey();
+
+
+
+            //Задание 14
+
+
+            //Console.WriteLine("Введите число секунд, прошедших с начала суток");
+            //int n = Convert.ToInt32(Console.ReadLine());
+            //int hour = n / 3600;
+            //int minute = ((n - 3600 * (n / 3600)) / 60);
+            //int second = n;
+            //if (hour > 0 && minute>0)
+            //{
+            //    second = n - hour*3600-minute*60;
+
+
+
+            //}
+            //else if(minute>0)
+            //{
+            //     second = n-minute*60;
+            //}
+            //else if (hour > 0)
+            //{
+            //    second = n - hour * 3600;
+            //}
+            //else
+            //{
+            //     second = n;
+            //}
+            //Console.WriteLine($" прошло часов:  {hour} , прошло минут:  {minute} , прошло секунд: {second}");
+
+            //Console.ReadKey();
+
+            //Задание 15
+
+            //int length = 543;
+            //int wigth = 130;
+            //Console.WriteLine($"Поместится {length*wigth/130/130} квадрата со стороной 130 мм");
+
+            //Console.ReadKey();
+
+            //Задание 16
+
+            //int num1 = 987;
+            //int num2 = (num1 % 10) * 100 + (num1 % 100);
+            //Console.WriteLine($"Получено число {num2}");
+
+            //Console.ReadKey();
+
+            //Задание 17
+
+            //Console.WriteLine("Введите число");
+            //int number = Convert.ToInt32(Console.ReadLine());
+            //int thousands = number / 1000;
+            //int hundreds = (number - thousands * 1000 - number % 100)/100;
+            //Console.WriteLine($"В этом числе {(hundreds)} сотен , {thousands} тысяч");
+
+
+            //Console.ReadKey();
+
+            //Задание 18
+
+            //Console.WriteLine("Назовите свое имя");
+            //string name = Console.ReadLine();
+            //Console.WriteLine($"{name}");
+            //Console.WriteLine($"Привет,{name}");
+
+            //Console.ReadKey();
+
+
+            //Задание 19
+
+            Random random1 = new Random();
+            int numberofcolor = random1.Next(0, 16);
+            
+            Console.WriteLine("*Поприветствуйте Тома Реддла");
+            string hi = Console.ReadLine();
+            if (hi=="Привет"|| hi=="Здравствуйте") {
+                Console.WriteLine("Здравствуй, как тебя зовут?");
+                string name = Console.ReadLine();
+                Console.WriteLine($"Привет, {name}");
+                Console.WriteLine("Ты знаешь что-то о тайной комнате?");
+                Console.WriteLine("Да");
+                Console.WriteLine("Можешь рассказать о ней");
+                Console.WriteLine("Нет");
+                Thread.Sleep(2000);
+                Console.WriteLine("Но могу показать");
+                Console.BackgroundColor = (ConsoleColor)numberofcolor;
+            }
+            
 
         }
     }
