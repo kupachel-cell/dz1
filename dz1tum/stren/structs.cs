@@ -5,9 +5,9 @@ namespace dz1tum.stren
 {
     public struct bankacc
     {
-        public int Number;
-        public string Type;
-        public double Balance;
+        public int Number { get; set; }
+        public string Type { get; set; }
+        public double Balance { get; set; }
         public bankacc(int number, string type, double balance)
         {
             Number = number;
@@ -17,13 +17,9 @@ namespace dz1tum.stren
     }
     public struct worker
     {
-        public string Name;
-        public UNI Workplace;
-        public worker (string name, UNI workplace)
-        {
-            Name = name;
-            Workplace = workplace;
-        }
+        public string Name { get; set; }
+        public int Workplace { get; set; }
+       
     }
     
     public class structs
